@@ -1,4 +1,5 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Fabrica Automotive
+Acest proiect va face o interfata informatica pentru o fabrica de automobile de mai multe tipuri, masini, autobuze, motociclete etc
 
 ### Important!
 Aveți voie cu cod generat de modele de limbaj la care nu ați contribuit semnificativ doar în folder-ul `generated`.
