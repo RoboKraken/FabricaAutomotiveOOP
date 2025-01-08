@@ -54,6 +54,15 @@ add_executable(${PROJECT_NAME}
     main.cpp
     generated/src/Helper.cpp
     env_fixes.h
+        headers/Car.h
+        headers/Vehicle.h
+        headers/Motorbike.h
+        cpp/Car.cpp
+        cpp/Motorbike.cpp
+        headers/AssemblyLine.h
+        cpp/AssemblyLine.cpp
+        headers/PaintStation.h
+        cpp/PaintStation.cpp
 )
 
 include(cmake/CompilerFlags.cmake)
