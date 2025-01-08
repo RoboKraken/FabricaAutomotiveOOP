@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <array>
 #include <chrono>
 #include <thread>
@@ -6,52 +7,61 @@
 //#include <SFML/Graphics.hpp>
 
 //#include <Helper.h>
-#include "env_fixes.h" 
-using namespace std;
+#include "env_fixes.h"
 
-class Vehicul {
+class Vehicle {
 public:
 
-    void ceSunt(){
-        cout<<"Sunt un vehicul";
+    void what(){
+        std::cout<<"I'm a vehicle";
     }
 
 private:
-    char numarInmatric[8];
+    char licensePlate[8];
 
 };
 
-class Masina : public Vehicul{
+class Masina : public Vehicle{
     private:
     const int nrRoti=4;
-    const char brand[40];
-    const char model[40];
-    int an;
+    std::string brand;
+    std::string model;
+    int year;
     public:
-        void ceSunt(){
-        cout<<"Sunt o masina "<<brand<<" model "<<model<<" fabricata in "<<an;
+        void what(){
+            std::cout<<"I'm a "<<brand<<" model "<<model<<" fabricated in "<<year;
         };
-        Masina(const char[40],const char[40],int);
+        Masina(std::string,std::string,int);
         ~Masina();
 };
-
-class Motocicleta : public Vehicul{
+Masina::Masina(const std::string,const std::string,int year){
+    this->brand=brand;
+    this->model=model;
+    this->year=year;
+}
+Masina::~Masina(){}
+class Motorbike : public Vehicle{
     private:
     const int nrRoti=2;
-    const char brand[40];
-    const char model[40];
-    int an;
+    std::string brand;
+    std::string model;
+    int year;
 
     public:
-        void ceSunt(){
-        cout<<"Sunt o motocicleta "<<brand<<" model "<<model<<" fabricata in "<<an;
+        void what(){
+            std::cout<<"I'm a "<<brand<<" model "<<model<<" fabricated in "<<year;
         }
-        Motocicleta(const char[40],const char[40],int);
-        ~Motocicleta();
+        Motorbike(std::string,std::string,int);
+        ~Motorbike();
 };
-
+Motorbike::Motorbike(std::string brand,std::string model,int year){
+    this->brand=brand;
+    this->model=model;
+    this->year=year;
+}
+Motorbike::~Motorbike(){}
 int main(){
     Masina M1= Masina("Dacia","Duster",2020);
-    M1.ceSunt();
+    M1.what();
     return 0;
 }
