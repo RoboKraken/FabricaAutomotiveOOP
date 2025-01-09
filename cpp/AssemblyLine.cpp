@@ -17,7 +17,7 @@ void AssemblyLine::removeVehicles(){
 }
 void AssemblyLine::displayVehicles(){
     std::cout << "Vehicles on the assembly line:\n";
-    for (int i=0;i<vehicles.size();++i){
+    for (auto i=0u;i<vehicles.size();++i){
         vehicles[i]->What();
         std::cout<<" -- ";
     }

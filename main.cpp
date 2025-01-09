@@ -17,6 +17,8 @@
 #include "headers/PaintStExc.h"
 #include "headers/Exception.h"
 #include <chrono>
+
+#include "headers/Truck.h"
 #include "headers/Vehicle.h"
 using std::cout;
 using std::cin;
@@ -31,6 +33,8 @@ int main(){
         M1->What();
         Car M2=Car("Volkswagen","Beetle",1930);
         M2.What();
+        Truck T1=Truck("Ford","Fusion",2010);
+        //cout<<T1;
         PaintStation station1=PaintStation({"Red","Blue","Green"},0.5);
         station1.showAvailableColors();
         station1.setCurrentColor("Red");
@@ -38,7 +42,7 @@ int main(){
         std::cout<<"Depreciation: $"<< M1->getDepreciation(currentYear)<<"\n";
         AssemblyLine assembly1=AssemblyLine(1);
         assembly1.addVehicle(std::move(M1));
-        assembly1.addVehicle(nullptr);
+        //assembly1.addVehicle(nullptr);
         assembly1.displayVehicles();
     }
     catch (const VehicleInvalidExc& e) {

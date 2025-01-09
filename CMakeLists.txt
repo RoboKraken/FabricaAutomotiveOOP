@@ -68,6 +68,8 @@ add_executable(${PROJECT_NAME}
         headers/VehicleInvalidExc.h
         headers/PaintStExc.h
         headers/AssemblyExc.h
+        headers/Truck.h
+        cpp/Truck.cpp
 )
 
 include(cmake/CompilerFlags.cmake)
