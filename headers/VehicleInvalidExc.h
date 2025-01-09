@@ -4,10 +4,10 @@
 
 #ifndef VEHICLEINVALIDEXC_H
 #define VEHICLEINVALIDEXC_H
-#include <exception>
+#include "Exception.h"
 #include <string>
 
-class VehicleInvalidExc:public std::exception {
-public:explicit VehicleInvalidExc(const std::string& message):Exception(":(Invalid vehile:"+msg){}
+class VehicleInvalidExc:public Exception {
+public:explicit VehicleInvalidExc(const std::string& msg):Exception(":(Invalid vehile:"+ msg){}
 };
 #endif //VEHICLEINVALIDEXC_H

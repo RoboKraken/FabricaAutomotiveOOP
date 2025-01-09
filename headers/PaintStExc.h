@@ -4,10 +4,10 @@
 
 #ifndef PAINTSTEXC_H
 #define PAINTSTEXC_H
-#include <exception>
+#include "Exception.h"
 #include <string>
 
-class PaintStExc:public std::exception {
-public:explicit PaintStExc(const std::string& message):Exception(":(Painting error:"+msg){}
+class PaintStExc:Exception {
+public:explicit PaintStExc(const std::string& msg):Exception(":(Painting error:"+msg){}
 };
 #endif //PAINTSTEXC_H
