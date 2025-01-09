@@ -16,7 +16,6 @@
 #include "headers/AssemblyExc.h"
 #include "headers/PaintStExc.h"
 #include "headers/Exception.h"
-#include <chrono>
 
 #include "headers/Truck.h"
 #include "headers/Vehicle.h"
@@ -27,7 +26,7 @@ using std::cerr;
 
 int main(){
     try {
-        int currentYear=stoi((std::format("{:%Y}", std::chrono::system_clock::now())));//Obtine anul curent folosind ceasul calc
+
         std::unique_ptr<Vehicle>M1=std::make_unique<Car>("Dacia","Duster",2020);
 
         M1->What();
@@ -35,10 +34,11 @@ int main(){
         M2.What();
         Truck T1=Truck("Ford","Fusion",2010);
         //cout<<T1;
-        PaintStation station1=PaintStation({"Red","Blue","Green"},0.5);
+        PaintStation station1=PaintStation({"Red","Blue","Green"},1);
         station1.showAvailableColors();
         station1.setCurrentColor("Red");
         station1.paintVehicle(*M1);
+        int currentYear=2025;
         std::cout<<"Depreciation: $"<< M1->getDepreciation(currentYear)<<"\n";
         AssemblyLine assembly1=AssemblyLine(1);
         assembly1.addVehicle(std::move(M1));
