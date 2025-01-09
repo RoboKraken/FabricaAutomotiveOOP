@@ -9,7 +9,7 @@
 #include <string>
 #include <iostream>
 #include "Vehicle.h"
-
+class Vehicle;
 class PaintStation{
 private:
     std::vector<std::string> availableColors;
@@ -20,7 +20,7 @@ public:
     void addColor(const std::string& newColor);
     void showAvailableColors()const;
     void setCurrentColor(const std::string& color);
-    void paintVehicle(Vehicle& vehicle)const;
+    void paintVehicle(Vehicle& vehicle);
     friend std::ostream& operator<<(std::ostream& os, const PaintStation& station);
 };
 

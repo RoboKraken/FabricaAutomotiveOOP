@@ -63,7 +63,11 @@ add_executable(${PROJECT_NAME}
         cpp/AssemblyLine.cpp
         headers/PaintStation.h
         cpp/PaintStation.cpp
-        headers/FactoryException.h
+        headers/Exception.h
+        cpp/Vehicle.cpp
+        headers/VehicleInvalidExc.h
+        headers/PaintStExc.h
+        headers/AssemblyExc.h
 )
 
 include(cmake/CompilerFlags.cmake)

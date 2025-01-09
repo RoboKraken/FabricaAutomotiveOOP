@@ -15,7 +15,7 @@ public:
     void what(){
         std::cout<<"I'm production line Mc production face and my number is"<<LineNr<<"\n";
     };
-    AssemblyLine(int,std::unique_ptr<Vehicle>);
+    AssemblyLine(int);
     void addVehicle(std::unique_ptr<Vehicle>);
     void removeVehicles();
     void displayVehicles();

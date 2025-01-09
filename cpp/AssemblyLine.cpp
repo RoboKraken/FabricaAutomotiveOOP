@@ -3,7 +3,9 @@
 //
 #include "../headers/AssemblyLine.h"
 
-
+AssemblyLine::AssemblyLine(int nr) {
+    this->LineNr = nr;
+}
 void AssemblyLine::addVehicle(std::unique_ptr<Vehicle> vehicle){
     vehicles.push_back(std::move(vehicle));
 }
@@ -21,4 +23,8 @@ void AssemblyLine::displayVehicles(){
 std::ostream& operator<<(std::ostream& os, AssemblyLine& AssemblyLine) {
     os<<"line: "<<AssemblyLine.LineNr<<"\n";
     return os;
-};
+}
+AssemblyLine::~AssemblyLine() {
+
+}
+
