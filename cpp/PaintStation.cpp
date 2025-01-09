@@ -13,7 +13,7 @@ std::ostream& operator<<(std::ostream& os, const PaintStation& station) {
 void PaintStation::paintVehicle(Vehicle& vehicle) {
     std::cout<<"Painting vehicle with color: "<< currentColor<<"...\n";
     std::this_thread::sleep_for(std::chrono::seconds(processingTime));//Haha, uite astepti lol:))
-    //vehicle.setColor(currentColor);
+    vehicle.setColor(currentColor);
     std::cout << "Vehicle successfully painted " << currentColor << "!\n";
 }
 PaintStation::PaintStation(const std::vector<std::string>& colors, int time)
