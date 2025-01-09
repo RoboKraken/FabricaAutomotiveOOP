@@ -3,6 +3,10 @@
 //
 #include "../headers/AssemblyLine.h"
 #include "../headers/AssemblyExc.h"
+/**
+ * @file AssemblyLine.cpp
+ * @brief Defines the assembly line functions
+ */
 AssemblyLine::AssemblyLine(int nr) {
     this->LineNr = nr;
 }

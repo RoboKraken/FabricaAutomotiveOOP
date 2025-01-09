@@ -1,6 +1,10 @@
 //
 // Created by Robert on 08/01/2025.
 //
+/**
+ * @file Car.cpp
+ * @brief Defines the car functions
+ */
 #include "../headers/Car.h"
 std::ostream& operator<<(std::ostream& os, Car& car) {
     os<<"brand: "<<car.brand<<"\n";

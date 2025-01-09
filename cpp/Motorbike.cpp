@@ -1,6 +1,10 @@
 //
 // Created by Robert on 08/01/2025.
 //
+/**
+ * @file Motorbike.cpp
+ * @brief Defines the motorbike functions
+ */
 #include "../headers/Motorbike.h"
 std::ostream& operator<<(std::ostream& os, Motorbike& motorbike) {
     os<<"brand: "<<motorbike.brand<<"\n";

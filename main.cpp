@@ -19,6 +19,10 @@
 
 #include "headers/Truck.h"
 #include "headers/Vehicle.h"
+/**
+ * @file main.cpp
+ * @brief Runs some tests to see if everything works
+ */
 using std::cout;
 using std::cin;
 using std::string;

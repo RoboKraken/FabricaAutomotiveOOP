@@ -1,7 +1,10 @@
 //
 // Created by Robert on 09/01/2025.
 //
-
+/**
+ * @file Bus.cpp
+ * @brief Defines the bus functions
+ */
 #ifndef BUS_CPP
 #define BUS_CPP
 #include "../headers/Bus.h"

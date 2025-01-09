@@ -6,6 +6,10 @@
 #include <thread>
 #include "../headers/Exception.h"
 #include "../headers/PaintStExc.h"
+/**
+ * @file PaintStation.cpp
+ * @brief Defines the paint station functions
+ */
 std::ostream& operator<<(std::ostream& os, const PaintStation& station) {
     os << "Paint station color="<<station.currentColor<<"\n";
     return os;
