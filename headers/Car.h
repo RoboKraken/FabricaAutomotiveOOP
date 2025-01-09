@@ -4,7 +4,12 @@
 #include <iostream>
 #include <string>
 #include "Vehicle.h"
-
+/**
+ * @class Car
+ * @brief This is a type of vehicle
+ *
+ * It's an inherited class from Vehicle that provides functionality specific to a car
+ */
 #ifndef CAR_H
 #define CAR_H
 class Car : public Vehicle{

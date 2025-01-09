@@ -9,6 +9,12 @@
 #include <string>
 #include <iostream>
 #include "Vehicle.h"
+/**
+ * @class PaintStation
+ * @brief An add-on to the factory
+ *
+ * It's a class that provides specific functions to paint vehicles
+ */
 class Vehicle;
 class PaintStation{
 private:

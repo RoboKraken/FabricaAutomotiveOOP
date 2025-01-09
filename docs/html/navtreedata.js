@@ -24,12 +24,17 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", ]
+  [ "My Project", "index.html", [
+    [ "Fabrica Automotive", "index.html", "index" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"env__fixes_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

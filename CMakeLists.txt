@@ -70,6 +70,8 @@ add_executable(${PROJECT_NAME}
         headers/AssemblyExc.h
         headers/Truck.h
         cpp/Truck.cpp
+        headers/Bus.h
+        cpp/Bus.cpp
 )
 
 include(cmake/CompilerFlags.cmake)

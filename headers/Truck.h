@@ -7,9 +7,16 @@
 #include <iostream>
 #include <string>
 #include "Vehicle.h"
+/**
+ * @class Truck
+ * @brief This is a type of vehicle
+ *
+ * It's an inherited class from Vehicle that provides functionality specific to a truck
+ */
 class Truck : public Vehicle{
 private:
-    int WheelNr=8;
+    int WheelNr=18;
+    int loadCapacity=20000;
     std::string brand;
     std::string model;
     int Year;

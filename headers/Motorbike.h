@@ -1,7 +1,12 @@
 //
 // Created by Robert on 08/01/2025.
 //
-
+/**
+ * @class Motorbike
+ * @brief This is a type of vehicle
+ *
+ * It's an inherited class from Vehicle that provides functionality specific to a motorbike
+ */
 #include <iostream>
 #include <string>
 #include "Vehicle.h"

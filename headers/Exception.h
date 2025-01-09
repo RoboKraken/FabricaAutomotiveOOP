@@ -6,7 +6,12 @@
 #define EXCEPTION_H
 #include <exception>
 #include <string>
-
+/**
+ * @class Exception
+ * @brief Class inherited from std::exception meant to represent factory-specific exceptions
+ *
+ * It has sub-classes that provide specific error messages
+ */
 class Exception: public std::exception
 {
 public:

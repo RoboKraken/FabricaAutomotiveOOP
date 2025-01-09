@@ -7,6 +7,12 @@
 #include <memory>
 #include <vector>
 #include "Vehicle.h"
+/**
+ * @class AssemblyLine
+ * @brief This class represents a physical production line in the factory
+ *
+ * The class provides functions that interact with the production line for easy management
+ */
 class AssemblyLine {
 private:
     int LineNr;
