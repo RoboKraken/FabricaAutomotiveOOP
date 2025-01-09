@@ -2,11 +2,14 @@
 // Created by Robert on 08/01/2025.
 //
 #include "../headers/AssemblyLine.h"
-
+#include "../headers/AssemblyExc.h"
 AssemblyLine::AssemblyLine(int nr) {
     this->LineNr = nr;
 }
 void AssemblyLine::addVehicle(std::unique_ptr<Vehicle> vehicle){
+    if (!vehicle) {
+        throw AssemblyExc("Attempted to add a null ptr:(");
+    }
     vehicles.push_back(std::move(vehicle));
 }
 void AssemblyLine::removeVehicles(){

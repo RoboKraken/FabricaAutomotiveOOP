@@ -4,6 +4,8 @@
 #include "../headers/PaintStation.h"
 #include <chrono>
 #include <thread>
+#include "../headers/Exception.h"
+#include "../headers/PaintStExc.h"
 std::ostream& operator<<(std::ostream& os, const PaintStation& station) {
     os << "Paint station color="<<station.currentColor<<"\n";
     return os;
@@ -35,6 +37,9 @@ void PaintStation::addColor(const std::string& newColor) {
     std::cout <<"Color "<<newColor<<" added to paint reserves in station"<<"\n";
 }
 void PaintStation::setCurrentColor(const std::string& color) {
+    if (std::find(availableColors.begin(), availableColors.end(), color) == availableColors.end()) {
+        throw PaintStExc("Color is not available");
+    }
     if (std::find(availableColors.begin(), availableColors.end(), color) != availableColors.end()) {
         currentColor=color;
         std::cout<<"Paint station color set:"<<currentColor <<"\n";

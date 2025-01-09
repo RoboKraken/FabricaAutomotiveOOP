@@ -7,7 +7,7 @@
 #include "Exception.h"
 #include <string>
 
-class AssemblyExc:Exception {
+class AssemblyExc:public Exception {
 public:explicit AssemblyExc(const std::string& msg):Exception(":( Assembling error:"+msg){}
 };
 #endif //ASSEMBLYEXC_H

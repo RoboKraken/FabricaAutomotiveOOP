@@ -15,6 +15,9 @@ public:
     virtual void What() const{
         std::cout<<"I'm a vehicle\n";
     }
+    double getDepreciation(int currentYear)const{
+        return calcDepreciation(currentYear);
+    }
     void setColor(const std::string& color) {
         Color = color;
     }
@@ -23,5 +26,8 @@ public:
 private:
     std::string LicensePlate;
     std::string Color;
+protected:
+    virtual double calcDepreciation(int currentYear)const=0;
 };
+
 #endif //VEHICLE_H

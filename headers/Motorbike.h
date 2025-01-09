@@ -22,5 +22,10 @@ public:
     Motorbike(std::string,std::string,int Yearear);
     ~Motorbike();
     friend std::ostream& operator<<(std::ostream& os, Motorbike& motorbike);
+protected:
+    double calcDepreciation(int currentYear)const override{
+        double age=currentYear-Year;
+        return age *800; //Scade in valoare
+    }
 };
 #endif //MOTORBIKE_H

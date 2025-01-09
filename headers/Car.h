@@ -22,5 +22,10 @@ public:
     ~Car();
     friend std::ostream& operator<<(std::ostream& os, Car& car);
     Car& operator=(const Car& other);
+protected:
+    double calcDepreciation(int currentYear)const override{
+        double age=currentYear-Year;
+        return age *1000; //Scade in valoare
+    }
 };
 #endif //CAR_H

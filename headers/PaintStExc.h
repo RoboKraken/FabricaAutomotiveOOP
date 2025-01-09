@@ -7,7 +7,7 @@
 #include "Exception.h"
 #include <string>
 
-class PaintStExc:Exception {
+class PaintStExc:public Exception {
 public:explicit PaintStExc(const std::string& msg):Exception(":(Painting error:"+msg){}
 };
 #endif //PAINTSTEXC_H
