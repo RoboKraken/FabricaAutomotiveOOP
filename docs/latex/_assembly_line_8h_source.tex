@@ -1,0 +1,34 @@
+\doxysection{Assembly\+Line.\+h}
+\hypertarget{_assembly_line_8h_source}{}\label{_assembly_line_8h_source}\index{headers/AssemblyLine.h@{headers/AssemblyLine.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 08/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ASSEMBLYLINE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ASSEMBLYLINE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }AssemblyLine\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ LineNr;}
+\DoxyCodeLine{00019\ \ \ \ \ std::vector<std::unique\_ptr<Vehicle>>\ vehicles;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ what()\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::cout<<\textcolor{stringliteral}{"{}I'm\ production\ line\ Mc\ production\ face\ and\ my\ number\ is"{}}<<LineNr<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00023\ \ \ \ \ \};}
+\DoxyCodeLine{00024\ \ \ \ \ AssemblyLine(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_assembly_line_ac6e99a0e9e99a033d2f90dcdd08c4a5d}{addVehicle}}(std::unique\_ptr<Vehicle>);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_assembly_line_ac2118fa78bdb8c7aa65211a90921c819}{removeVehicles}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_assembly_line_a6f248719dd784f256dabd13508a4bfa7}{displayVehicles}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \string~AssemblyLine();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ AssemblyLine\&\ line);}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+
+\end{DoxyCode}

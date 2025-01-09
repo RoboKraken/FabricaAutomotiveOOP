@@ -1,0 +1,39 @@
+\doxysection{Vehicle.\+h}
+\hypertarget{_vehicle_8h_source}{}\label{_vehicle_8h_source}\index{headers/Vehicle.h@{headers/Vehicle.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 08/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ VEHICLE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ VEHICLE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PaintStation.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vehicle}{Vehicle}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ What()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ std::cout<<\textcolor{stringliteral}{"{}I'm\ a\ vehicle\(\backslash\)n"{}};}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ getDepreciation(\textcolor{keywordtype}{int}\ currentYear)\textcolor{keyword}{const}\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ calcDepreciation(currentYear);}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ setColor(\textcolor{keyword}{const}\ std::string\&\ color)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ Color\ =\ color;}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \mbox{\hyperlink{class_vehicle}{Vehicle}}\&\ vehicle);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//friend\ PaintStation;}}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ LicensePlate;}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ Color;}
+\DoxyCodeLine{00029\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ calcDepreciation(\textcolor{keywordtype}{int}\ currentYear)\textcolor{keyword}{const}=0;}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//VEHICLE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,80 @@
+\doxysection{Truck Class Reference}
+\hypertarget{class_truck}{}\label{class_truck}\index{Truck@{Truck}}
+
+
+This is a type of vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Truck.\+h$>$}
+
+Inheritance diagram for Truck\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_truck}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_truck_ab8bdf470063689183a876ba400af1040}{What}} () const override
+\item 
+\Hypertarget{class_truck_a0caabbbb095fb113ede1b48631d74e2f}\label{class_truck_a0caabbbb095fb113ede1b48631d74e2f} 
+{\bfseries Truck} (const \mbox{\hyperlink{class_truck}{Truck}} \&copy)
+\item 
+\Hypertarget{class_truck_a1fba589a4354d9d5e938090f2d0b3fe3}\label{class_truck_a1fba589a4354d9d5e938090f2d0b3fe3} 
+{\bfseries Truck} (std\+::string, std\+::string, int Yearear)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries get\+Depreciation} (int current\+Year) const
+\item 
+void {\bfseries set\+Color} (const std\+::string \&color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_truck_a94dddb30e764e456eee1596459cf2a3d}{calc\+Depreciation}} (int current\+Year) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_truck_a403c083f265b0499cd6447558fd9b3ee}\label{class_truck_a403c083f265b0499cd6447558fd9b3ee} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_truck}{Truck}} \&truck)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a type of vehicle. 
+
+It\textquotesingle{}s an inherited class from \doxylink{class_vehicle}{Vehicle} that provides functionality specific to a truck 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_truck_a94dddb30e764e456eee1596459cf2a3d}\index{Truck@{Truck}!calcDepreciation@{calcDepreciation}}
+\index{calcDepreciation@{calcDepreciation}!Truck@{Truck}}
+\doxysubsubsection{\texorpdfstring{calcDepreciation()}{calcDepreciation()}}
+{\footnotesize\ttfamily \label{class_truck_a94dddb30e764e456eee1596459cf2a3d} 
+double Truck\+::calc\+Depreciation (\begin{DoxyParamCaption}\item[{int}]{current\+Year}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+\Hypertarget{class_truck_ab8bdf470063689183a876ba400af1040}\index{Truck@{Truck}!What@{What}}
+\index{What@{What}!Truck@{Truck}}
+\doxysubsubsection{\texorpdfstring{What()}{What()}}
+{\footnotesize\ttfamily \label{class_truck_ab8bdf470063689183a876ba400af1040} 
+void Truck\+::\+What (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Truck.\+h\item 
+cpp/\mbox{\hyperlink{_truck_8cpp}{Truck.\+cpp}}\end{DoxyCompactItemize}

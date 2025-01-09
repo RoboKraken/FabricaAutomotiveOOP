@@ -1,0 +1,18 @@
+\doxysection{Assembly\+Exc.\+h}
+\hypertarget{_assembly_exc_8h_source}{}\label{_assembly_exc_8h_source}\index{headers/AssemblyExc.h@{headers/AssemblyExc.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 09/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ASSEMBLYEXC\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ASSEMBLYEXC\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Exception.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }AssemblyExc:\textcolor{keyword}{public}\ Exception\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:\textcolor{keyword}{explicit}\ AssemblyExc(\textcolor{keyword}{const}\ std::string\&\ msg):Exception(\textcolor{stringliteral}{"{}\ Assembling\ error:"{}}+msg)\{\}}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ASSEMBLYEXC\_H}}
+
+\end{DoxyCode}

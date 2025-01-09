@@ -1,0 +1,38 @@
+\doxysection{Truck.\+h}
+\hypertarget{_truck_8h_source}{}\label{_truck_8h_source}\index{headers/Truck.h@{headers/Truck.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 09/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TRUCK\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TRUCK\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }Truck\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_vehicle}{Vehicle}}\{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ WheelNr=18;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ loadCapacity=20000;}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ brand;}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ model;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ Year;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ What()\textcolor{keyword}{\ const\ override}\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ std::cout<<\textcolor{stringliteral}{"{}I'm\ a\ "{}}<<brand<<\textcolor{stringliteral}{"{}\ truck,\ model\ "{}}<<model<<\textcolor{stringliteral}{"{}\ fabricated\ in\ "{}}<<Year<<\textcolor{stringliteral}{"{}\ with\ "{}}<<WheelNr<<\textcolor{stringliteral}{"{}\ wheels"{}}<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ Truck(\textcolor{keyword}{const}\ Truck\&\ copy);}
+\DoxyCodeLine{00029\ \ \ \ \ Truck(std::string,std::string,\textcolor{keywordtype}{int}\ Yearear);}
+\DoxyCodeLine{00030\ \ \ \ \ \string~Truck();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ Truck\&\ truck);}
+\DoxyCodeLine{00032\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{double}\ calcDepreciation(\textcolor{keywordtype}{int}\ currentYear)\textcolor{keyword}{const\ override}\{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ age=currentYear-\/Year;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ age\ *1200;\ \textcolor{comment}{//Scade\ in\ valoare}}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TRUCK\_H}}
+
+\end{DoxyCode}

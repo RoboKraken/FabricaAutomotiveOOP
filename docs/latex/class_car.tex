@@ -1,0 +1,83 @@
+\doxysection{Car Class Reference}
+\hypertarget{class_car}{}\label{class_car}\index{Car@{Car}}
+
+
+This is a type of vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+h$>$}
+
+Inheritance diagram for Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_car}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_car_aef2c13c3fc42ece8717d1954da0fa036}{What}} () const override
+\item 
+\Hypertarget{class_car_af8c33f39e5c8507a0a0d8f2a76e26e2c}\label{class_car_af8c33f39e5c8507a0a0d8f2a76e26e2c} 
+{\bfseries Car} (const \mbox{\hyperlink{class_car}{Car}} \&copy)
+\item 
+\Hypertarget{class_car_a7a721f894c6476283c9e1642d7e344ec}\label{class_car_a7a721f894c6476283c9e1642d7e344ec} 
+{\bfseries Car} (std\+::string, std\+::string, int)
+\item 
+\Hypertarget{class_car_a2a65a1d2bb1d7d73a66f86b130a34709}\label{class_car_a2a65a1d2bb1d7d73a66f86b130a34709} 
+\mbox{\hyperlink{class_car}{Car}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_car}{Car}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries get\+Depreciation} (int current\+Year) const
+\item 
+void {\bfseries set\+Color} (const std\+::string \&color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_car_a5e49b2a39e829c8d640cba125d32fbab}{calc\+Depreciation}} (int current\+Year) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_car_a403a2ea9c9b8a8b08fb124f5f86ca260}\label{class_car_a403a2ea9c9b8a8b08fb124f5f86ca260} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_car}{Car}} \&car)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a type of vehicle. 
+
+It\textquotesingle{}s an inherited class from \doxylink{class_vehicle}{Vehicle} that provides functionality specific to a car 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_car_a5e49b2a39e829c8d640cba125d32fbab}\index{Car@{Car}!calcDepreciation@{calcDepreciation}}
+\index{calcDepreciation@{calcDepreciation}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{calcDepreciation()}{calcDepreciation()}}
+{\footnotesize\ttfamily \label{class_car_a5e49b2a39e829c8d640cba125d32fbab} 
+double Car\+::calc\+Depreciation (\begin{DoxyParamCaption}\item[{int}]{current\+Year}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+\Hypertarget{class_car_aef2c13c3fc42ece8717d1954da0fa036}\index{Car@{Car}!What@{What}}
+\index{What@{What}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{What()}{What()}}
+{\footnotesize\ttfamily \label{class_car_aef2c13c3fc42ece8717d1954da0fa036} 
+void Car\+::\+What (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Car.\+h\item 
+cpp/\mbox{\hyperlink{_car_8cpp}{Car.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\doxysection{Bus Class Reference}
+\hypertarget{class_bus}{}\label{class_bus}\index{Bus@{Bus}}
+
+
+This is a type of vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Bus.\+h$>$}
+
+Inheritance diagram for Bus\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bus}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bus_afb4f5df01b5ceddf4717ba9c20874155}{What}} () const override
+\item 
+\Hypertarget{class_bus_a5364138e4beb67e473b468a8947906d2}\label{class_bus_a5364138e4beb67e473b468a8947906d2} 
+{\bfseries Bus} (const \mbox{\hyperlink{class_bus}{Bus}} \&copy)
+\item 
+\Hypertarget{class_bus_a2ae8109f10d233154a8749acfa5d0422}\label{class_bus_a2ae8109f10d233154a8749acfa5d0422} 
+{\bfseries Bus} (std\+::string, std\+::string, int Yearear)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries get\+Depreciation} (int current\+Year) const
+\item 
+void {\bfseries set\+Color} (const std\+::string \&color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_bus_a72bb0ad9f00a42b4f65db33b73a989b0}{calc\+Depreciation}} (int current\+Year) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bus_a4159c54f1163e8b3499987c691017355}\label{class_bus_a4159c54f1163e8b3499987c691017355} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_bus}{Bus}} \&\mbox{\hyperlink{class_bus}{Bus}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a type of vehicle. 
+
+It\textquotesingle{}s an inherited class from \doxylink{class_vehicle}{Vehicle} that provides functionality specific to a bus 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bus_a72bb0ad9f00a42b4f65db33b73a989b0}\index{Bus@{Bus}!calcDepreciation@{calcDepreciation}}
+\index{calcDepreciation@{calcDepreciation}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{calcDepreciation()}{calcDepreciation()}}
+{\footnotesize\ttfamily \label{class_bus_a72bb0ad9f00a42b4f65db33b73a989b0} 
+double Bus\+::calc\+Depreciation (\begin{DoxyParamCaption}\item[{int}]{current\+Year}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+\Hypertarget{class_bus_afb4f5df01b5ceddf4717ba9c20874155}\index{Bus@{Bus}!What@{What}}
+\index{What@{What}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{What()}{What()}}
+{\footnotesize\ttfamily \label{class_bus_afb4f5df01b5ceddf4717ba9c20874155} 
+void Bus\+::\+What (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Bus.\+h\item 
+cpp/\mbox{\hyperlink{_bus_8cpp}{Bus.\+cpp}}\end{DoxyCompactItemize}

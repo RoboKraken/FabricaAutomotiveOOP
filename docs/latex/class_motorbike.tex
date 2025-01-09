@@ -1,0 +1,80 @@
+\doxysection{Motorbike Class Reference}
+\hypertarget{class_motorbike}{}\label{class_motorbike}\index{Motorbike@{Motorbike}}
+
+
+This is a type of vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Motorbike.\+h$>$}
+
+Inheritance diagram for Motorbike\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_motorbike}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_motorbike_a51987836af311c93006c8bc282b30c8a}{What}} () const override
+\item 
+\Hypertarget{class_motorbike_a5c691ff261d740a513b3ad12a3541e93}\label{class_motorbike_a5c691ff261d740a513b3ad12a3541e93} 
+{\bfseries Motorbike} (const \mbox{\hyperlink{class_motorbike}{Motorbike}} \&copy)
+\item 
+\Hypertarget{class_motorbike_ac77de45586519e0bd66168f130a7d7c7}\label{class_motorbike_ac77de45586519e0bd66168f130a7d7c7} 
+{\bfseries Motorbike} (std\+::string, std\+::string, int Yearear)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries get\+Depreciation} (int current\+Year) const
+\item 
+void {\bfseries set\+Color} (const std\+::string \&color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_motorbike_a7dd247080c57ea9e93e3aa6334f0ac88}{calc\+Depreciation}} (int current\+Year) const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_motorbike_a5be75617bdab2aa344639ded3bdfdba5}\label{class_motorbike_a5be75617bdab2aa344639ded3bdfdba5} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_motorbike}{Motorbike}} \&motorbike)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a type of vehicle. 
+
+It\textquotesingle{}s an inherited class from \doxylink{class_vehicle}{Vehicle} that provides functionality specific to a motorbike 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_motorbike_a7dd247080c57ea9e93e3aa6334f0ac88}\index{Motorbike@{Motorbike}!calcDepreciation@{calcDepreciation}}
+\index{calcDepreciation@{calcDepreciation}!Motorbike@{Motorbike}}
+\doxysubsubsection{\texorpdfstring{calcDepreciation()}{calcDepreciation()}}
+{\footnotesize\ttfamily \label{class_motorbike_a7dd247080c57ea9e93e3aa6334f0ac88} 
+double Motorbike\+::calc\+Depreciation (\begin{DoxyParamCaption}\item[{int}]{current\+Year}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+\Hypertarget{class_motorbike_a51987836af311c93006c8bc282b30c8a}\index{Motorbike@{Motorbike}!What@{What}}
+\index{What@{What}!Motorbike@{Motorbike}}
+\doxysubsubsection{\texorpdfstring{What()}{What()}}
+{\footnotesize\ttfamily \label{class_motorbike_a51987836af311c93006c8bc282b30c8a} 
+void Motorbike\+::\+What (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_vehicle}{Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Motorbike.\+h\item 
+cpp/\mbox{\hyperlink{_motorbike_8cpp}{Motorbike.\+cpp}}\end{DoxyCompactItemize}

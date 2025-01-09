@@ -1,0 +1,112 @@
+\doxysection{Paint\+Station Class Reference}
+\hypertarget{class_paint_station}{}\label{class_paint_station}\index{PaintStation@{PaintStation}}
+
+
+An add-\/on to the factory.  
+
+
+
+
+{\ttfamily \#include $<$Paint\+Station.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_paint_station_a32ffb2597cc0a7b6fa02405db384ec1a}\label{class_paint_station_a32ffb2597cc0a7b6fa02405db384ec1a} 
+{\bfseries Paint\+Station} (const std\+::vector$<$ std\+::string $>$ \&colors, int time)
+\item 
+void \mbox{\hyperlink{class_paint_station_a59059c28e4435dabe6e31741936b1030}{add\+Color}} (const std\+::string \&new\+Color)
+\begin{DoxyCompactList}\small\item\em Adds a color to the paint station reserves. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paint_station_a8bde98cb7f0613f9b5550eff46401505}{show\+Available\+Colors}} () const
+\begin{DoxyCompactList}\small\item\em Shows all available colors in the paintstation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paint_station_a285aa03a4b02a8abd0369042148e241c}{set\+Current\+Color}} (const std\+::string \&color)
+\begin{DoxyCompactList}\small\item\em Sets the color that we want to use next. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paint_station_a755eaea02e002f9dcb513b14543c631a}{paint\+Vehicle}} (\mbox{\hyperlink{class_vehicle}{Vehicle}} \&vehicle)
+\begin{DoxyCompactList}\small\item\em Paints a specific vehicle with the color selected in the paintstation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_paint_station_a7fcc43eaaad473aa7a03522ea8bedbd6}\label{class_paint_station_a7fcc43eaaad473aa7a03522ea8bedbd6} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_paint_station}{Paint\+Station}} \&station)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An add-\/on to the factory. 
+
+It\textquotesingle{}s a class that provides specific functions to paint vehicles 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_paint_station_a59059c28e4435dabe6e31741936b1030}\index{PaintStation@{PaintStation}!addColor@{addColor}}
+\index{addColor@{addColor}!PaintStation@{PaintStation}}
+\doxysubsubsection{\texorpdfstring{addColor()}{addColor()}}
+{\footnotesize\ttfamily \label{class_paint_station_a59059c28e4435dabe6e31741936b1030} 
+void Paint\+Station\+::add\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Color}{}\end{DoxyParamCaption})}
+
+
+
+Adds a color to the paint station reserves. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & the color that we want to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_paint_station_a755eaea02e002f9dcb513b14543c631a}\index{PaintStation@{PaintStation}!paintVehicle@{paintVehicle}}
+\index{paintVehicle@{paintVehicle}!PaintStation@{PaintStation}}
+\doxysubsubsection{\texorpdfstring{paintVehicle()}{paintVehicle()}}
+{\footnotesize\ttfamily \label{class_paint_station_a755eaea02e002f9dcb513b14543c631a} 
+void Paint\+Station\+::paint\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle}{Vehicle}} \&}]{vehicle}{}\end{DoxyParamCaption})}
+
+
+
+Paints a specific vehicle with the color selected in the paintstation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vehicle\&} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_paint_station_a285aa03a4b02a8abd0369042148e241c}\index{PaintStation@{PaintStation}!setCurrentColor@{setCurrentColor}}
+\index{setCurrentColor@{setCurrentColor}!PaintStation@{PaintStation}}
+\doxysubsubsection{\texorpdfstring{setCurrentColor()}{setCurrentColor()}}
+{\footnotesize\ttfamily \label{class_paint_station_a285aa03a4b02a8abd0369042148e241c} 
+void Paint\+Station\+::set\+Current\+Color (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Sets the color that we want to use next. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color we decided \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_paint_station_a8bde98cb7f0613f9b5550eff46401505}\index{PaintStation@{PaintStation}!showAvailableColors@{showAvailableColors}}
+\index{showAvailableColors@{showAvailableColors}!PaintStation@{PaintStation}}
+\doxysubsubsection{\texorpdfstring{showAvailableColors()}{showAvailableColors()}}
+{\footnotesize\ttfamily \label{class_paint_station_a8bde98cb7f0613f9b5550eff46401505} 
+void Paint\+Station\+::show\+Available\+Colors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Shows all available colors in the paintstation. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Paint\+Station.\+h\item 
+cpp/\mbox{\hyperlink{_paint_station_8cpp}{Paint\+Station.\+cpp}}\end{DoxyCompactItemize}

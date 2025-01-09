@@ -1,0 +1,30 @@
+\doxysection{Exception.\+h}
+\hypertarget{_exception_8h_source}{}\label{_exception_8h_source}\index{headers/Exception.h@{headers/Exception.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 08/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ EXCEPTION\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ EXCEPTION\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Exception:\ \textcolor{keyword}{public}\ std::exception}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ Exception(\textcolor{keyword}{const}\ std::string\&\ message)}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ :\ msgerr(message)\ \{\}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Exception()\ \textcolor{keyword}{noexcept}\{\}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ msgerr.c\_str();}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ msgerr;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//EXCEPTION\_H}}
+
+\end{DoxyCode}

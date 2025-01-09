@@ -1,0 +1,90 @@
+\doxysection{Assembly\+Line Class Reference}
+\hypertarget{class_assembly_line}{}\label{class_assembly_line}\index{AssemblyLine@{AssemblyLine}}
+
+
+This class represents a physical production line in the factory.  
+
+
+
+
+{\ttfamily \#include $<$Assembly\+Line.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_assembly_line_ab4f179c5a822426563ac4dff26a4ce53}\label{class_assembly_line_ab4f179c5a822426563ac4dff26a4ce53} 
+void {\bfseries what} ()
+\item 
+\Hypertarget{class_assembly_line_acb44f6d40e70ee2caf881a1fb9de77cc}\label{class_assembly_line_acb44f6d40e70ee2caf881a1fb9de77cc} 
+{\bfseries Assembly\+Line} (int)
+\item 
+void \mbox{\hyperlink{class_assembly_line_ac6e99a0e9e99a033d2f90dcdd08c4a5d}{add\+Vehicle}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_vehicle}{Vehicle}} $>$)
+\begin{DoxyCompactList}\small\item\em Adds a specific vehicle model to the assembly line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_assembly_line_ac2118fa78bdb8c7aa65211a90921c819}{remove\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Removes all vehicles on the assembly line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_assembly_line_a6f248719dd784f256dabd13508a4bfa7}{display\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Displays all vehicles being assembled on an assembly line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_assembly_line_a75b812d88ba8ac0aa139633d40690a26}\label{class_assembly_line_a75b812d88ba8ac0aa139633d40690a26} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_assembly_line}{Assembly\+Line}} \&line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a physical production line in the factory. 
+
+The class provides functions that interact with the production line for easy management 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_assembly_line_ac6e99a0e9e99a033d2f90dcdd08c4a5d}\index{AssemblyLine@{AssemblyLine}!addVehicle@{addVehicle}}
+\index{addVehicle@{addVehicle}!AssemblyLine@{AssemblyLine}}
+\doxysubsubsection{\texorpdfstring{addVehicle()}{addVehicle()}}
+{\footnotesize\ttfamily \label{class_assembly_line_ac6e99a0e9e99a033d2f90dcdd08c4a5d} 
+void Assembly\+Line\+::add\+Vehicle (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_vehicle}{Vehicle}} $>$}]{vehicle}{}\end{DoxyParamCaption})}
+
+
+
+Adds a specific vehicle model to the assembly line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & is the vehicle pointer we want to add, we should use std\+::move() to transfer ownership \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_assembly_line_a6f248719dd784f256dabd13508a4bfa7}\index{AssemblyLine@{AssemblyLine}!displayVehicles@{displayVehicles}}
+\index{displayVehicles@{displayVehicles}!AssemblyLine@{AssemblyLine}}
+\doxysubsubsection{\texorpdfstring{displayVehicles()}{displayVehicles()}}
+{\footnotesize\ttfamily \label{class_assembly_line_a6f248719dd784f256dabd13508a4bfa7} 
+void Assembly\+Line\+::display\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays all vehicles being assembled on an assembly line. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_assembly_line_ac2118fa78bdb8c7aa65211a90921c819}\index{AssemblyLine@{AssemblyLine}!removeVehicles@{removeVehicles}}
+\index{removeVehicles@{removeVehicles}!AssemblyLine@{AssemblyLine}}
+\doxysubsubsection{\texorpdfstring{removeVehicles()}{removeVehicles()}}
+{\footnotesize\ttfamily \label{class_assembly_line_ac2118fa78bdb8c7aa65211a90921c819} 
+void Assembly\+Line\+::remove\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Removes all vehicles on the assembly line. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Assembly\+Line.\+h\item 
+cpp/\mbox{\hyperlink{_assembly_line_8cpp}{Assembly\+Line.\+cpp}}\end{DoxyCompactItemize}

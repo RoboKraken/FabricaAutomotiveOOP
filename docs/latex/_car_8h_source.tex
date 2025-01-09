@@ -1,0 +1,36 @@
+\doxysection{Car.\+h}
+\hypertarget{_car_8h_source}{}\label{_car_8h_source}\index{headers/Car.h@{headers/Car.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 08/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ CAR\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ CAR\_H}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Car\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_vehicle}{Vehicle}}\{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ WheelNr=4;}
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ brand;}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ model;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ Year;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ What()\textcolor{keyword}{\ const\ override}\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::cout<<\textcolor{stringliteral}{"{}I'm\ a\ "{}}<<brand<<\textcolor{stringliteral}{"{}\ model\ "{}}<<model<<\textcolor{stringliteral}{"{}\ fabricated\ in\ "{}}<<Year<<\textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ \ \ \ \ Car(\textcolor{keyword}{const}\ Car\&\ copy);}
+\DoxyCodeLine{00026\ \ \ \ \ Car(std::string,std::string,\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00027\ \ \ \ \ \string~Car();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ Car\&\ car);}
+\DoxyCodeLine{00029\ \ \ \ \ Car\&\ operator=(\textcolor{keyword}{const}\ Car\&\ other);}
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ calcDepreciation(\textcolor{keywordtype}{int}\ currentYear)\textcolor{keyword}{const\ override}\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ age=currentYear-\/Year;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ age\ *1000;\ \textcolor{comment}{//Scade\ in\ valoare}}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CAR\_H}}
+
+\end{DoxyCode}

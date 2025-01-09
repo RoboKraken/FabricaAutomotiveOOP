@@ -1,0 +1,34 @@
+\doxysection{Paint\+Station.\+h}
+\hypertarget{_paint_station_8h_source}{}\label{_paint_station_8h_source}\index{headers/PaintStation.h@{headers/PaintStation.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Robert\ on\ 08/01/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ PAINTSTATION\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ PAINTSTATION\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_vehicle}{Vehicle}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }PaintStation\{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<std::string>\ availableColors;}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ currentColor;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ processingTime;\ \textcolor{comment}{//Trebuie\ asteptat\ cand\ se\ picteaza:)}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ PaintStation(\textcolor{keyword}{const}\ std::vector<std::string>\&\ colors,\textcolor{keywordtype}{int}\ time);\textcolor{comment}{//Setam\ timp\ de\ asteptare}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_station_a59059c28e4435dabe6e31741936b1030}{addColor}}(\textcolor{keyword}{const}\ std::string\&\ newColor);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_station_a8bde98cb7f0613f9b5550eff46401505}{showAvailableColors}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_station_a285aa03a4b02a8abd0369042148e241c}{setCurrentColor}}(\textcolor{keyword}{const}\ std::string\&\ color);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_paint_station_a755eaea02e002f9dcb513b14543c631a}{paintVehicle}}(\mbox{\hyperlink{class_vehicle}{Vehicle}}\&\ vehicle);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ PaintStation\&\ station);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PAINTSTATION\_H}}
+
+\end{DoxyCode}
