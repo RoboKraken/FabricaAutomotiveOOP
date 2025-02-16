@@ -19,6 +19,7 @@
 
 #include "headers/Truck.h"
 #include "headers/Vehicle.h"
+#include "cpp/Factory.cpp"
 /**
  * @file main.cpp
  * @brief Runs some tests to see if everything works
@@ -29,6 +30,9 @@ using std::string;
 using std::cerr;
 
 int main(){
+    Singleton* instance = Singleton::getInstance();
+    instance->runTests();
+    /*
     try {
 
         std::unique_ptr<Vehicle>M1=std::make_unique<Car>("Dacia","Duster",2020);
@@ -66,6 +70,6 @@ int main(){
     }
     //cout<<station1;
 
-
+*/
     return 0;
 }

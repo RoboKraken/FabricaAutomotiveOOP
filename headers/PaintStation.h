@@ -9,6 +9,7 @@
 #include <string>
 #include <iostream>
 #include "Vehicle.h"
+#include "FactoryObserver.h"
 /**
  * @class PaintStation
  * @brief An add-on to the factory

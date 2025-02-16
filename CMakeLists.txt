@@ -72,6 +72,10 @@ add_executable(${PROJECT_NAME}
         cpp/Truck.cpp
         headers/Bus.h
         cpp/Bus.cpp
+        headers/FactoryObserver.h
+        cpp/FactoryObserver.cpp
+        headers/Factory.h
+        cpp/Factory.cpp
 )
 
 include(cmake/CompilerFlags.cmake)

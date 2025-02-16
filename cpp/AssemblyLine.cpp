@@ -48,3 +48,12 @@ AssemblyLine::~AssemblyLine() {
 
 }
 
+/*void AssemblyLine::observeColor() const{
+    addAssemblyLine()
+    auto i = availableColors.begin();
+    while (i!=availableColors.end()){
+        std::cout <<"Current color:" << *i << "\n";
+        ++i;
+    }
+}
+*/
